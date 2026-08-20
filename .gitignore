@@ -1,0 +1,49 @@
+# ─── Dépendances ───────────────────────────────
+node_modules/
+.pnpm-store/
+
+# ─── Secrets / environnement ───────────────────
+.env
+.env.local
+.env.*.local
+# ...mais on PARTAGE l'exemple (sans vraies valeurs) :
+!.env.example
+
+# ─── Fichiers générés ──────────────────────────
+# Client Prisma (recréé par `prisma generate`)
+**/src/generated/
+*.tsbuildinfo
+
+# ─── Builds ────────────────────────────────────
+dist/
+build/
+.next/          # web (si Next un jour)
+.expo/          # mobile (Expo)
+web-build/
+
+# ─── Logs ──────────────────────────────────────
+*.log
+npm-debug.log*
+pnpm-debug.log*
+
+# ─── OS / IDE ──────────────────────────────────
+.DS_Store
+Thumbs.db
+.idea/
+*.swp
+*.swo
+*~
+# On ignore les réglages perso VS Code, mais on garde
+# la liste d'extensions recommandées pour l'équipe :
+.vscode/*
+!.vscode/extensions.json
+
+# ─── Tests ─────────────────────────────────────
+coverage/
+
+
+# ─── Assistants IA (règles générées localement) ─
+.agents/
+.claude/
+.windsurf/
+skills-lock.json
